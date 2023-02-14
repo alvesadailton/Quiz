@@ -1,0 +1,358 @@
+:root {
+    --primary-color: #080B3D;
+    --secundary-color: #fff;
+    --tertiary-color: #A8ACAD;
+    --container-color: #D2D7D9;
+    --h1-color: #FAFA01;
+    --button-color: #00F561;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+.menu {
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.menu img{
+    height: 60px;
+}
+
+.menu h1 {
+justify-self: center;
+color: var(--h1-color);
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.6rem;
+    
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--secundary-color);
+}
+
+body {
+    background-color: var(--tertiary-color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 60vw;
+    height: 100%;
+    background-color: var(--container-color);
+}
+
+.student-info {
+    margin: 50px auto;
+    padding-top: 50px;
+    width: 60vw;
+    height: 100%;
+}
+
+.divider {
+    border-bottom: 5px solid #808080;
+    margin: 0 20px 20px 20px
+}
+
+.header {
+    font-size: 4rem;
+    margin-left: 20px;
+}
+
+.label-group {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.student:not(#age) {
+    width: 20vw;
+    min-width: 200px;
+    height: 30px;
+    font-size: 1.8rem;
+    margin-left: 5px;
+}
+
+#age {
+    margin-left: 5px;
+    min-width: 80px;
+    width: 100px;
+    height: 30px;
+    font-size: 1.8rem;
+}
+
+.html-info {
+    margin: auto;
+    padding-top: 50px;
+    width: 60vw;
+}
+
+.quiz {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.quiz-header {
+    margin-bottom: 30px;
+    font-size: 1.8rem
+}
+
+.quiz p {
+    font-size: 1.6rem
+}
+
+.questions {
+    margin-top: 30px;
+    font-size: 1.8rem;
+}
+
+.answer {
+    padding: 5px 0;
+}
+
+.css-info {
+    margin: auto;
+    padding-top: 50px;
+    width: 60vw;
+}
+
+button {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--button-color);
+}
+
+button a {
+    font-size: 3rem;
+    color: var(--secundary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-color);
+}
+
+footer a {
+    margin: 20px;
+    text-decoration: none;
+    color: var(--secundary-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Resolução baixa */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .menu {
+        position: fixed;
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        height: 60px;
+        background-color: var(--primary-color);
+        color: var(--secundary-color);
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    
+    .menu img{
+        height: 60px;
+    }
+    
+    .menu h1 {
+    justify-self: center;
+    color: var(--h1-color);
+    }
+    
+    .menu ul li {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        color: var(--secundary-color);
+    }
+    
+    
+    .label-group {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size: 1.6rem;
+    }
+
+    .student:not(#age) {
+        width: 20vw;
+        min-width: 90px;
+        height: 20px;
+        font-size: 1rem;
+        margin-left: 5px; }
+
+        #age {
+            margin-left: 5px;
+            min-width: 80px;
+            width: 20vw;
+            height: 20px;
+            font-size: 1rem;
+        }
+
+        .quiz {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 40vw;
+        }
+
+    button {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 50px;
+        background-color: var(--button-color);
+    }
+    
+    button a {
+        font-size: 3rem;
+        color: var(--secundary-color);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        background-color: var(--primary-color);
+    }
+    footer a {
+        margin: 20px;
+        text-decoration: none;
+        color: var(--secundary-color);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .menu {
+        position: fixed;
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        height: 60px;
+        background-color: var(--primary-color);
+        color: var(--secundary-color);
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    
+    .menu img{
+        height: 60px;
+    }
+    
+    .menu h1 {
+    justify-self: center;
+    color: var(--h1-color);
+    font-size: 3rem;
+    }
+    
+    .menu ul li {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        color: var(--secundary-color);
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .menu {
+        position: fixed;
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        height: 60px;
+        background-color: var(--primary-color);
+        color: var(--secundary-color);
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    
+    .menu img{
+        height: 60px;
+    }
+    
+    .menu h1 {
+    justify-self: center;
+    color: var(--h1-color);
+    font-size: 3rem;
+    }
+    
+    .menu ul li {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        color: var(--secundary-color);
+    }
+}

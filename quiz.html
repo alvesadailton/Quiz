@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <img src="/img/menu.svg" alt="Dois homens comendo e bebendo, comemorando algo">
+        <h1>HTML/CSS Quiz</h1>
+        <ul>
+            <li><a href="#student-info">INFO</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="student-info" id="student-info">
+            <h1 class="header">Student Info</h1>
+            <div class="divider"></div>
+            <div class="label-group">
+                <label for="name">Nome: </label>
+                <input type="text" id="name" class="student" placeholder="Digite seu nome" required>
+            </div>
+            <div class="label-group">
+                <label for="email">Email: </label>
+                <input type="email" id="email" class="student" placeholder="example@example.com" required>
+            </div>
+            <div class="label-group">
+                <label for="age">Idade: </label>
+                <input type="number" class="student" id="age" placeholder="12" min="12" max="120" required>
+            </div>
+            <div class="html-info" id="html">
+                <h1 class="header">HTML</h1>
+                <div class="divider"></div>
+                <div class="quiz">
+                    <h2 class="quiz-header">Question #1</h2>
+                    <p>The legend element represents a caption for the content of its parent fieldset element</p>
+                    <div class="questions">
+                        <div class="answer">
+                            <label for="q1-a1">
+                                <input type="radio" id="q1-a1" name="q1" value="true"> True
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <label for="q1-a2">
+                                <input type="radio" id="q1-a2" name="q1" value="false"> False
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz">
+                    <h2 class="quiz-header">Question #2</h2>
+                    <p>The legend element represents a caption for the content of its parent fieldset element</p>
+                    <div class="questions">
+                        <div class="answer">
+                            <label for="q1-a1">
+                                <input type="radio" id="q2-a1" name="q2" value="true"> True
+                            </label>
+                        </div>
+                        <div class="answer">
+                            <label for="q1-a2">
+                                <input type="radio" id="q2-a2" name="q2" value="false"> False
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="css-info" id="css">
+                <h1 class="header">CSS</h1>
+                <div class="divider"></div>
+                <div class="quiz">
+                    <p>Are you an frontend developer?</p>
+                    <select name="frontend" id="frontend">
+                        <option value="option1">Select an option</option>
+                        <option value="option2">Yes</option>
+                        <option value="option3">No</option>
+                    </select>
+                </div>
+                <div class="quiz">
+                    <p>Do you have any questions?</p>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <button type="submit"><a href="https://github.com/alvesadailton" target="_blank">Send</a></button>
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.instagram.com/notliad4/" target="bla
+        ">Instagram</a>
+        <a href="https://github.com/alvesadailton" target="bla
+        ">GitHub</a>
+    </footer>
+</body>
+
+</html>
